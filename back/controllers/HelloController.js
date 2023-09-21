@@ -2,6 +2,6 @@
 
 // Fin de la fonction sayHello
 
-export default {
+export {
   sayHello,
 }

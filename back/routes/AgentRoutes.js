@@ -1,12 +1,12 @@
 import express from 'express'
-import agentController from '../controllers/AgentController.js'
+import { getAgents, getAgent, createAgent, updateAgent, deleteAgent } from '../controllers/AgentController.js'
 
 const router = express.Router()
 
-router.get('/', agentController.getAgents)
-router.get('/:id', agentController.getAgent)
-router.post('/', agentController.createAgent)
-router.put('/:id', agentController.updateAgent)
-router.delete('/:id', agentController.deleteAgent)
+router.get('/', getAgents)
+router.get('/:id', getAgent)
+router.post('/', createAgent)
+router.put('/:id', updateAgent)
+router.delete('/:id', deleteAgent)
 
 export default router

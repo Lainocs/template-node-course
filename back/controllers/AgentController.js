@@ -25,7 +25,7 @@ const deleteAgent = (req, res) => {
   // 
 }
 
-export default {
+export {
   getAgents,
   getAgent,
   createAgent,
